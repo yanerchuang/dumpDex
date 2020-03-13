@@ -39,7 +39,8 @@ Android Studio 3.0
 ### 源码编译
 
 将源码下载或者clone到本地，使用android studio打开，编译成功后，安装apk，将 **lib/armeabi-v7a/libnativeDump.so** 复制到 */data/local/tmp/libnativeDump.so* ，权限 设置为777，arm64机型还需要将将 **lib/arm64-v8a/libnativeDump.so** 复制到 */data/local/tmp/libnativeDump64.so*可以通过文件管理器操作，也可以使用如下adb shell命令
-
+D:\AndroidDemo\dumpDex\app\build\intermediates\cmake\release\obj\armeabi-v7a
+D:\AndroidDemo\dumpDex\app\build\intermediates\transforms\mergeJniLibs\release\0\lib\armeabi-v7a
 ```bash
 #仅适用于32位手机
 adb shell
