@@ -12,8 +12,8 @@ Android Studio 3.0
 
 大多数xposed环境的手机，暂不支持模拟器
 
-### apk 下载
-
+### apk 下载 
+1
 [https://github.com/WrBug/dumpDex/releases](https://github.com/WrBug/dumpDex/releases)
 
 [https://github.com/WrBug/DeveloperHelper](https://github.com/WrBug/DeveloperHelper)  **推荐下载**
