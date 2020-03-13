@@ -33,7 +33,7 @@ public class PackerInfo {
      */
 
     /**
-     * 60加固
+     * 360加固
      */
     private static final String[] QI_HOO = {"com.stub.StubApp"};
     /**
@@ -52,6 +52,10 @@ public class PackerInfo {
      * 百度加固
      */
     private static final String[] BAI_DU = {"com.baidu.protect.StubApplication"};
+    /**
+     * UNKONE_JG
+     */
+    private static final String[] UNKONE_JG = {"com.lnsoo.android.multidex.ApplicationLauncher"};
 
 
     static {
@@ -60,6 +64,7 @@ public class PackerInfo {
         sPackageName.addAll(Arrays.asList(BANG_BANG));
         sPackageName.addAll(Arrays.asList(TENCENT));
         sPackageName.addAll(Arrays.asList(BAI_DU));
+        sPackageName.addAll(Arrays.asList(UNKONE_JG));
 
         for (String s : QI_HOO) {
             sTypeMap.put(s, Type.QI_HOO);
@@ -75,6 +80,10 @@ public class PackerInfo {
         }
         for (String s : BAI_DU) {
             sTypeMap.put(s, Type.BAI_DU);
+        }
+
+        for (String s : UNKONE_JG) {
+            sTypeMap.put(s, Type.UNKONE_JG);
         }
 
     }
@@ -107,7 +116,8 @@ public class PackerInfo {
         AI_JIA_MI("爱加密"),
         BANG_BANG("梆梆加固"),
         TENCENT("腾讯加固"),
-        BAI_DU("百度加固");
+        BAI_DU("百度加固"),
+        UNKONE_JG("未知加固");
 
         String name;
 

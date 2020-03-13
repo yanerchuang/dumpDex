@@ -35,6 +35,7 @@ public class XposedInit implements IXposedHookLoadPackage {
 
     @Override
     public void handleLoadPackage(final XC_LoadPackage.LoadPackageParam lpparam) {
+        log("lpparam.packageName:"+lpparam.packageName);
         PackerInfo.Type type = PackerInfo.find(lpparam);
         if (type == null) {
             return;
